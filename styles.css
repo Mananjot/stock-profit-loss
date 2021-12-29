@@ -1,0 +1,66 @@
+:root{
+    --dark-grey: rgb(141, 139, 139);
+    --light-grey: rgb(179, 179, 179);
+    --primary-color: rgb(6, 25, 78);
+    --secondary-color: rgb(73, 87, 126);
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+
+h1{
+    color: var(--primary-color)
+}
+
+#input-container, #result-container{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    float:left;
+    width:50%;
+    min-height: 100vh;
+    background-color: var(--light-grey);
+}
+
+#result-container{
+    background-color: var(--dark-grey);
+}
+
+input[type="text"]{
+    display: block;
+    margin:10px auto;
+    padding: 10px;
+    width: 70%;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    outline: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    background-color: transparent;
+}
+
+input[type="text"]:focus{
+    border: 3px solid var(--secondary-color);
+}
+
+input[type="submit"]{
+    color: var(--dark-grey);
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    border:2px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
