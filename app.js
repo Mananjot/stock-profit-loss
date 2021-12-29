@@ -12,8 +12,6 @@ submitButton.addEventListener("click", () => {
   var profit = (currentSharePrice - initialSharePrice) * noOfShares;
   var profitPercent =  profit / (initialSharePrice * noOfShares) * 100;
   
-  console.log(result);
-  console.log("BUttom Click");
   if (profit > 0) {
     result.textContent =
       "WhooHo!! You made the profit of " +
@@ -21,7 +19,6 @@ submitButton.addEventListener("click", () => {
       " and your profit percentage is " +
       profitPercent + "% 😀";
     result.style.color = "green";
-    console.log(profit);
   } else if (profit < 0) {
     result.textContent =
       "Oh No. You are under loss of " +
@@ -32,6 +29,6 @@ submitButton.addEventListener("click", () => {
     result.style.color = "red";
   } else {
     result.textContent = "You are at Par. No Profit No Loss 😊";
-    result.style.color = "rgb(73, 87, 126)";
+    result.style.color = "rgb(6, 25, 78)";
   }
 });
